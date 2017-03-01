@@ -33,7 +33,7 @@
         </javaTypeResolver>
 
         <!--要生成的 pojo 模块位置-->
-        <javaModelGenerator targetPackage="com.generator.pojo" targetProject="THIS_CONFIGURATION_IS_NOT_REQUIRED">
+        <javaModelGenerator targetPackage="cn.generator.pojo" targetProject="THIS_CONFIGURATION_IS_NOT_REQUIRED">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
@@ -41,13 +41,13 @@
         </javaModelGenerator>
 
         <!--要生成的 Mapper.xml 文件位置-->
-        <sqlMapGenerator targetPackage="com.generator.mapper" targetProject="THIS_CONFIGURATION_IS_NOT_REQUIRED">
+        <sqlMapGenerator targetPackage="cn.generator.mapper" targetProject="THIS_CONFIGURATION_IS_NOT_REQUIRED">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
         <!--要生成的 Mapper 接口类-->
-        <javaClientGenerator targetPackage="com.generator.mapper" targetProject="THIS_CONFIGURATION_IS_NOT_REQUIRED" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="cn.generator.mapper" targetProject="THIS_CONFIGURATION_IS_NOT_REQUIRED" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
